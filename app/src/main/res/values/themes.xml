@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PortfolioApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/grey_black</item>
+    </style>
+
+    <style name="Theme.PortfolioApp" parent="Base.Theme.PortfolioApp" />
+</resources>

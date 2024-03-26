@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/certificate_pic"
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_bg2"
+                android:layout_height="200dp" />
+
+
+            <TextView
+                android:id="@+id/c_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/certificate_pic"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/CName"
+                android:textColor="@color/grey_black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edt_cname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/certificate_pic"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/c_name"
+                android:fontFamily="@font/poppins_light"
+                android:inputType="text"
+                android:textColor="@color/grey_black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/issueOrganization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c_name"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/IssueOrganization"
+                android:textColor="@color/grey_black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edt_issueOrganization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_cname"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/issueOrganization"
+                android:fontFamily="@font/poppins_light"
+                android:inputType="text"
+                android:textColor="@color/grey_black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/IssueDateYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/issueOrganization"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/IssueDateYear"
+                android:textColor="@color/grey_black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edt_IssueDateYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_issueOrganization"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/IssueDateYear"
+                android:fontFamily="@font/poppins_light"
+                android:inputType="text"
+                android:textColor="@color/grey_black"
+                android:textSize="12sp"
+                tools:ignore="TextFields" />
+
+
+            <TextView
+                android:id="@+id/skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/IssueDateYear"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/Skills"
+                android:textColor="@color/grey_black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edt_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/IssueDateYear"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@id/skills"
+                android:fontFamily="@font/poppins_light"
+                android:inputType="text"
+                android:textColor="@color/grey_black"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
+

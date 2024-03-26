@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Fragment.HomeFragment">
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_black"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>
